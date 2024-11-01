@@ -1,12 +1,39 @@
 :root {
     --orange: rgb(255, 115, 0);
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
-    width: 100%;
+  
     padding: 0;
     margin: 0;
     padding-top: 50px;
     font-family: Helvetica;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.me {
+    display: flex;
+    justify-content: center;
+}
+.about {
+    background: rgb(55, 56, 56);
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .polosa {
     width: 100%;
@@ -20,13 +47,13 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     padding: 0 10px;
     z-index: 10;
     background: #68fcfc00;
+    max-width: 1280px;
     }
 .navbar_ul {
     display: flex;
@@ -74,6 +101,7 @@ h2 {
     text-align: left;
 }
 .photo {
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -85,16 +113,6 @@ h2 {
     width: 226px;
     height: 226px; 
     overflow: hidden;
-}
-.container {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: rgb(55, 56, 56);
-    padding-left: 2%;
-    padding-right: 2%;
 }
 .project-tile {
     display: flex;
@@ -120,10 +138,15 @@ p {
     background:  var(--orange);
 }
 footer {
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+.div-footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 20px 0px 20px;
 }
 .profile-link {
     text-decoration: none;
@@ -133,7 +156,7 @@ footer {
 
     .polosa {
         height: 30px;
-        width: 110%;
+        width: 100%;
     }
     .navbar {
         position: fixed;
